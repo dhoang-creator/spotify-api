@@ -1,8 +1,18 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading ch.epfl.scala:scalafix-core_2.13:2.3.0-RC1
+[error] sbt.librarymanagement.ResolveException: Error downloading com.github.finagle:finch-core_2.13:0.30.0
 [error]   Not found
 [error]   Not found
-[error]   not found: /Users/duyhoang/.ivy2/localch.epfl.scala/scalafix-core_2.13/2.3.0-RC1/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/ch/epfl/scala/scalafix-core_2.13/2.3.0-RC1/scalafix-core_2.13-2.3.0-RC1.pom
+[error]   not found: /Users/duyhoang/.ivy2/localcom.github.finagle/finch-core_2.13/0.30.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/finagle/finch-core_2.13/0.30.0/finch-core_2.13-0.30.0.pom
+[error] Error downloading com.twitter:finagle-http_2.13:19.8.0
+[error]   Not found
+[error]   Not found
+[error]   not found: /Users/duyhoang/.ivy2/localcom.twitter/finagle-http_2.13/19.8.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/twitter/finagle-http_2.13/19.8.0/finagle-http_2.13-19.8.0.pom
+[error] Error downloading com.github.finagle:finch-circe_2.13:0.30.0
+[error]   Not found
+[error]   Not found
+[error]   not found: /Users/duyhoang/.ivy2/localcom.github.finagle/finch-circe_2.13/0.30.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/finagle/finch-circe_2.13/0.30.0/finch-circe_2.13-0.30.0.pom
 [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:345)
 [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:314)
 [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
@@ -27,14 +37,24 @@
 [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
 [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
 [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
-[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-[error] 	at java.lang.Thread.run(Thread.java:748)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading ch.epfl.scala:scalafix-core_2.13:2.3.0-RC1
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:1589)
+[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.github.finagle:finch-core_2.13:0.30.0
 [error]   Not found
 [error]   Not found
-[error]   not found: /Users/duyhoang/.ivy2/localch.epfl.scala/scalafix-core_2.13/2.3.0-RC1/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/ch/epfl/scala/scalafix-core_2.13/2.3.0-RC1/scalafix-core_2.13-2.3.0-RC1.pom
+[error]   not found: /Users/duyhoang/.ivy2/localcom.github.finagle/finch-core_2.13/0.30.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/finagle/finch-core_2.13/0.30.0/finch-core_2.13-0.30.0.pom
+[error] Error downloading com.twitter:finagle-http_2.13:19.8.0
+[error]   Not found
+[error]   Not found
+[error]   not found: /Users/duyhoang/.ivy2/localcom.twitter/finagle-http_2.13/19.8.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/twitter/finagle-http_2.13/19.8.0/finagle-http_2.13-19.8.0.pom
+[error] Error downloading com.github.finagle:finch-circe_2.13:0.30.0
+[error]   Not found
+[error]   Not found
+[error]   not found: /Users/duyhoang/.ivy2/localcom.github.finagle/finch-circe_2.13/0.30.0/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/finagle/finch-circe_2.13/0.30.0/finch-circe_2.13-0.30.0.pom
