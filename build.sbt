@@ -38,6 +38,14 @@ libraryDependencies ++= Seq(
   "com.github.finagle"  %% "finch-core"          % "0.30.0",
   "com.github.finagle"  %% "finch-circe"         % "0.30.0",
 
+  // Log4Cats
+  "io.chrisdavenport"   %% "log4cats-log4s"      % "0.4.0-M1",
+  "io.chrisdavenport"   %% "log4cats-slf4j"      % "1.0.0-RC3",
+
+  // Log4s
+  "org.log4s"           %% "log4s"               % "1.8.2",
+  "org.apache.logging.log4j" % "log4j-core" % "2.12.1",
+
   // http4s
 //  "org.http4s"          %% "http4s-ember-client" % http4sVersion,
 //  "org.http4s"          %% "http4s-ember-server" % http4sVersion,

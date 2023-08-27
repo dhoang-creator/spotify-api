@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/duyhoang/Desktop/Github Projects/SpotifyAPI/src/main/scala/ExampleIOApp.scala:16:16: value log is defined twice;[0m
+[0m[[0m[31merror[0m] [0m[0m  the conflicting method log was defined at line 13:16[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val log = Slf4jLogger.getLogger[IO][0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
