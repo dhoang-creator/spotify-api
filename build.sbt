@@ -48,6 +48,11 @@ libraryDependencies ++= Seq(
   // scache
 //    "com.evolution"           %% "scache"                 % "4.40",
 
+  // OAuth Libraries
+  "com.ocadotechnology"        %% "sttp-oauth2"             % "0.17.0-RC1",
+  "com.ocadotechnology"        %% "sttp-oauth2-circe"       % "0.17.0-RC1",
+
+
   // Testing Frameworks
   "org.scalactic"       %% "scalactic"            % "3.2.16"      % Test,
   "org.scalatest"       %% "scalatest"            % "3.2.16"      % Test,
