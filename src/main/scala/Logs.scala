@@ -1,5 +1,8 @@
 import org.log4s.{Logger, getLogger}
 
+/*
+  We need to leave this to the last minute and understand how we can inject the logs for monitoring and Granfana playback
+ */
 trait Logs {
   private[this] val logger = getLogger
 
