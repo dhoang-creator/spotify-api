@@ -1,26 +1,29 @@
 package Artist
 
+import cats.effect.IO
+
 /*
   You've broken down the Response data outlined on the Spotify for developers page but we also need to think about whether the Spotify DB mirrors the data we've stated in the below
  */
 
-sealed trait artistIdentifier
+sealed trait Artist
 
-case class externalUrls(spotify: String) extends artistIdentifier
-case class url(url: String) extends artistIdentifier
-case class followers(href: String, total: Int) extends artistIdentifier
-case class genres(genre: Array[String]) extends artistIdentifier
-case class popularity(popularityValue: Int) extends artistIdentifier
-case class artistImage(url: url, height: Int, width: Int) extends artistIdentifier
-case class artistId(name: String, href: String, artistType: String, uri: String) extends artistIdentifier
+case class externalUrls(spotify: String) extends Artist
+case class url(url: String) extends Artist
+case class followers(href: String, total: Int) extends Artist
+case class genres(genre: Array[String]) extends Artist
+case class popularity(popularityValue: Int) extends Artist
+case class artistImage(url: url, height: Int, width: Int) extends Artist
+case class artistId(name: String, href: String, artistType: String, uri: String) extends Artist
 
-case class artist(artistId: artistId, genres: genres, followers: followers, popularity: popularity, artistImage: artistImage, externalUrls: externalUrls) extends artistIdentifier
-
-/*
-  Thinking aside the request response pattern here for the above data, we need to think about the logic held within the below object
-  1. We should be able to validate the input type
- */
+case class artist(artistId: artistId, genres: genres, followers: followers, popularity: popularity, artistImage: artistImage, externalUrls: externalUrls) extends Artist
 
 object artist {
+
+  /*
+    You wanted to separate the functionality between the effectual and the business logic but surely they interact in the below regard
+   */
+  // we need to think about how we deal with the information after a URL -> whether this is a JSON object or String?
+  def getArtist(artistUrl: url): Either[IO, Error] = ???
 
 }
