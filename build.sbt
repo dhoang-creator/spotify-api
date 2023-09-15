@@ -51,7 +51,8 @@ libraryDependencies ++= Seq(
   // Testing Frameworks
   "org.scalactic"                   %% "scalactic"               % "3.2.16"      % Test,
   "org.scalatest"                   %% "scalatest"               % "3.2.16"      % Test,
-  "com.disneystreaming"             %% "weaver-cats"             % "0.8.3"       % Test
+  "com.disneystreaming"             %% "weaver-cats"             % "0.8.3"       % Test,
+  "org.junit.jupiter"               % "junit-jupiter-api"        % "5.10.0"      % Test
 )
 
 testFrameworks += new TestFramework("weaver.framework.CatsEffect")
