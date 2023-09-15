@@ -3,7 +3,7 @@ package OAuth
 /*
   We're working with a Scala OAuth library because unlike other public API Endpoints, Spotify doesn't issue JWT but ordinary Access Tokens
  */
-class ClientCredentials {
+object ClientCredentials {
 
   // the below code is courtesy of the 'sttp-oauth2' documentation which you'll have to flesh out yourself
 
