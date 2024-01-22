@@ -1,3 +1,0 @@
-class ArtistSpec extends TestingFramework {
-
-}
