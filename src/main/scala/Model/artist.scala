@@ -2,7 +2,9 @@ package Model
 
 object artist {
 
-  // note that the first three types are nested in another type
+  /*
+  We need to better understand JSON data structures given that many of the below are nested
+   */
   private type Spotify = String
   private type followersHref = String
   private type Total = Option[Int]

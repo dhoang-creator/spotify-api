@@ -14,7 +14,10 @@ object Routes {
   // should we not declare this in the main?
   implicit val runtime: IORuntime = cats.effect.unsafe.IORuntime.global
 
-  //
+  /*
+  You need to understand what the aim of the routes is? Taking data, deserialising it and storing it in an in-mem DB
+  Note that this project is a read only project of the data you are requesting from Spotify
+   */
   def getArtistData(artist: Artist): IO[Artist] = ???
 
   val artistFetch = HttpRoutes.of[IO] {
