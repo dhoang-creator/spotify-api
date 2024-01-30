@@ -1,8 +1,0 @@
-SpotifyAPI Requirements
-
-Project: Build a Purely Functional API which connects to a Spotify user's profile and pulls the metadata from the profile
-            and pushes it to the browser.
-
-User-centric build
-
-There's no data storing aside from fetching the data so no need for a repository
