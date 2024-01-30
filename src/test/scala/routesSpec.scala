@@ -1,4 +1,4 @@
-class RoutesSpec extends munit.FunSuite {
+class routesSpec extends munit.FunSuite {
 
   test("getArtistData does the expected behaviour") {
 

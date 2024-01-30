@@ -9,7 +9,7 @@ import org.http4s.Request
     - which should be a string
     - do we have to interact with the Spotify Accounts API to validate that the client credentials are correct or just go primitive and bring up an error on our side?
  */
-case class User(id: Long, name: String)
+case class accessToken(id: Long, name: String)
 
 object user {
   /*

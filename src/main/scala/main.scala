@@ -1,9 +1,10 @@
 import cats.effect.{ExitCode, IO, IOApp}
 import org.http4s.ember.server.EmberServerBuilder
+import org.http4s.server.Router
 import org.typelevel.log4cats.LoggerFactory
 import org.typelevel.log4cats.slf4j.Slf4jFactory
 
-object Main extends IOApp {
+object main extends IOApp {
 
   override def run(args: List[String]): IO[ExitCode] = ???
 
