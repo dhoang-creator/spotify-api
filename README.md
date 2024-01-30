@@ -41,7 +41,7 @@ That the user will know how to navigate routes and uri's to make the search quer
 - Application is able to retrieve up-to-date data concerning their Spotify Account.
 - Exception handling for non-valid client credentials
 - Caching for repeated requests
-- Quick response timesA
+- Quick response times
 
 3.2 External Interface Requirements
 
