@@ -1,26 +1,34 @@
 import Model.artist.Artist
-import cats.effect.IO
+import cats.Monad
+import cats.effect.{IO, IOApp}
 import cats.effect.unsafe.IORuntime
 import org.http4s.HttpRoutes
 import org.http4s.Method.GET
 import org.http4s.Status.Ok
+import org.http4s.dsl.Http4sDsl
 
-
-// we're skipping over the OAuth element and acting as if the below GET method fetches the data that we require
-object routes {
-
-  // should we not declare this in the main?
-  implicit val runtime: IORuntime = cats.effect.unsafe.IORuntime.global
-
+object routes extends IOApp {
   /*
-  You need to understand what the aim of the routes is? Taking data, deserialising it and storing it in an in-mem DB
-  Note that this project is a read only project of the data you are requesting from Spotify
-   */
-  def getArtistData(artist: Artist): IO[Artist] = ???
+    Endpoints are just routes that follow CRUD operations:
+    - Declare each endpoint and thus the route
+    - Type out what the Route should look like
+    - Translate the route into a series of methods that return data
 
-  val artistFetch = HttpRoutes.of[IO] {
-    case GET -> Root / "artists" =>
-      getArtistData().flatMap(Ok(_))
+    Question: should we create ROUTES for 200, 401, 403, 429 etc
+
+    Note that for the below endpoint, you should just receive all the Response data and not just some of it
+   */
+
+  // You need to re-read the Spotify Web API documentation since you're a little bit outside of your comfort zone
+
+  // HTTP Response 200 - Good response
+  // GET /artists?SpotifyID=0TnOYISbd1XYRBk9myaseg
+  def artistRoutes[F[_]: Monad]: HttpRoutes[F] = {
+    val dsl = Http4sDsl[F]
+    import dsl._
+    HttpRoutes.of[F] {
+      case GET -> Root/ "artist" :? // the rest a regex search param of what you would input in the uri
+    }
   }
 
 }

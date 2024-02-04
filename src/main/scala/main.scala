@@ -6,6 +6,10 @@ import org.typelevel.log4cats.slf4j.Slf4jFactory
 
 object main extends IOApp {
 
+  /*
+    How do we integrate the routes methods into the below? Do we need to explicitly state them?
+   */
+
   override def run(args: List[String]): IO[ExitCode] = ???
 
   implicit val loggerFactory: LoggerFactory[IO] = Slf4jFactory.create[IO]

@@ -20,5 +20,5 @@ object user {
 
 
   // this was taken from the http4s page
-  val authUser1: Kleisli[OptionT[IO, ?], Request[IO], User] = Kleisli(_ => OptionT.liftF(IO(???)))
+  val authUser1: Kleisli[OptionT[IO, ?], Request[IO], accessToken] = Kleisli(_ => OptionT.liftF(IO(???)))
 }
