@@ -12,6 +12,8 @@ object main extends IOApp {
 
   override def run(args: List[String]): IO[ExitCode] = ???
 
+  // not only is there a run element when it comes to http4s but also a stream element give that fs2 streams are found within http4s
+
   implicit val loggerFactory: LoggerFactory[IO] = Slf4jFactory.create[IO]
 
   val services = ???

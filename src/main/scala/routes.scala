@@ -12,14 +12,18 @@ object routes extends IOApp {
     Endpoints are just routes that follow CRUD operations:
     - Declare each endpoint and thus the route
     - Type out what the Route should look like
-    - Translate the route into a series of methods that return data
+    - Translate the route into a series of methods that return data -> refer to the Http4s services, defining a service and returning content in the response
 
     Question: should we create ROUTES for 200, 401, 403, 429 etc
+
+    Maybe this is a question to refer to Google -> whether or not we should define services for all the edge cases or whether to ensure that the api is dynamic
 
     Note that for the below endpoint, you should just receive all the Response data and not just some of it
    */
 
   // You need to re-read the Spotify Web API documentation since you're a little bit outside of your comfort zone
+
+  // Also don't forget that there is a Request/Response for all of the services we define
 
   // HTTP Response 200 - Good response
   // GET /artists?SpotifyID=0TnOYISbd1XYRBk9myaseg
